@@ -1,16 +1,16 @@
-(message "==> Loading sethmcl/lib/envy.el")
+(message "==> Loading s/lib/envy.el")
 
 ;; Create a directory for storing temporary files
 (make-directory
- (setq sethmcl/tmp-local-dir
-       (sethmcl/join-dirs sethmcl/dotfiles-dir ".tmp")) t)
+ (setq s/tmp-local-dir
+       (s/join-dirs s/dotfiles-dir ".tmp")) t)
 
 ;; Set directory for autosaves / backups
 (make-directory
- (setq sethmcl/tmp-backups-dir
-       (sethmcl/join-dirs sethmcl/tmp-local-dir "backups")) t)
+ (setq s/tmp-backups-dir
+       (s/join-dirs s/tmp-local-dir "backups")) t)
 (make-directory
- (setq sethmcl/tmp-autosaves-dir
-       (sethmcl/join-dirs sethmcl/tmp-local-dir "autosaves")) t)
+ (setq s/tmp-autosaves-dir
+       (s/join-dirs s/tmp-local-dir "autosaves")) t)
 
 (provide 'envy)
