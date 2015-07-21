@@ -39,12 +39,13 @@
 				;; "t" 'T
 				;; "u" 'U
 				;; "v" 'V
-				;; "w" 'W
+				"w" 'save-buffer
 				;; "x" 'X
 				;; "y" 'Y
 				;; "z" 'Z
 				"=" 'align-to-equals
 				";" 'align-to-colons
+                                "-" 'godef-jump
 				)))
 
 	       ;; Evil NerdCommenter
